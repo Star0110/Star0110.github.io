@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-T">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago Exitoso</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4CAF50; /* Un verde amigable */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .icon {
+            font-size: 4em; /* Tamaño del ícono */
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            <!-- Puedes usar un ícono SVG o una imagen aquí si lo deseas -->
+            <!-- Por ahora, un simple checkmark con texto o un emoji si el navegador lo soporta bien -->
+            ✔ <!-- Este es un checkmark (✓) Unicode -->
+        </div>
+        <h1>¡Gracias por tu pago!</h1>
+        <p>Tu transacción ha sido completada exitosamente.</p>
+        <p>Serás redirigido a la aplicación en breve.</p>
+    </div>
+
+    <script>
+        // Opcional: Si quieres que esta página intente cerrar el WebView o redirigir
+        // a la app después de un tiempo, puedes añadir JavaScript.
+        // Sin embargo, tu app Android ya maneja la redirección al QR cuando
+        // detecta esta URL, así que este script es probablemente innecesario
+        // y podría incluso interferir si no se hace con cuidado.
+
+        // setTimeout(function() {
+        //     // Intentar cerrar (esto es más para pop-ups, no funcionará en un WebView normal)
+        //     // window.close();
+
+        //     // Si tienes un deep link configurado para tu app:
+        //     // window.location.href = "tuapp://qr";
+        // }, 3000); // Espera 3 segundos
+    </script>
+</body>
+</html>
